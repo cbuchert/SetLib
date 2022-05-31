@@ -3,8 +3,8 @@ export const getSetsAreEqual = <T>(a: Set<T>, b: Set<T>): boolean => {
     return false
   }
 
-  for (const value of a) {
-    if (!b.has(value)) {
+  for (const element of a) {
+    if (!b.has(element)) {
       return false
     }
   }
